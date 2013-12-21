@@ -2,7 +2,7 @@ cnpmtop
 ======
 forked from [substack/npmtop](https://github.com/substack/npmtop)
 
-2011-01-20:
+2013-12-21:
 
     rank   percent   packages   author
     ----   -------   --------   ------
