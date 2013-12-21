@@ -1,6 +1,6 @@
 {
     "name" : "cnpmtop",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "description" : "silly program that ranks npm contributors by number of packages",
     "repository" : {
         "type" : "git",
@@ -8,7 +8,7 @@
     },
     "main" : "index.js",
     "bin" : {
-        "npmtop" : "bin/cmd.js"
+        "cnpmtop" : "bin/cmd.js"
     },
     "dependencies" : {
         "optimist" : "~0.3.4",
