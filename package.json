@@ -1,7 +1,7 @@
 {
     "name" : "cnpmtop",
     "version" : "0.1.1",
-    "description" : "silly program that ranks npm contributors by number of packages",
+    "description" : "Who is the most prolific NPM contributor from the very first start",
     "repository" : {
         "type" : "git",
         "url" : "https://github.com/ChinaNode/npmtop.git"
