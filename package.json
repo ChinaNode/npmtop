@@ -1,30 +1,30 @@
 {
-    "name" : "npmtop",
-    "version" : "0.2.0",
+    "name" : "cnpmtop",
+    "version" : "0.1.0",
     "description" : "silly program that ranks npm contributors by number of packages",
     "repository" : {
         "type" : "git",
-        "url" : "http://github.com/substack/npmtop.git"
+        "url" : "https://github.com/ChinaNode/npmtop.git"
     },
     "main" : "index.js",
     "bin" : {
         "npmtop" : "bin/cmd.js"
     },
     "dependencies" : {
-        "request" : "~2.9.202",
         "optimist" : "~0.3.4",
         "sprintf" : "~0.1.1"
     },
     "keywords" : [
         "npm",
         "contributors",
-        "modules"
+        "modules",
+        "rednode"
     ],
     "author" : {
-        "name" : "James Halliday",
-        "email" : "mail@substack.net",
-        "url" : "http://substack.net"
+        "name" : "Pana",
+        "email" : "pana.wang@outlook.com",
+        "url" : "http://thepana.com"
     },
-    "license" : "MIT/X11",
+    "license" : "MIT",
     "engine" : { "node" : ">=0.6.0" }
 }

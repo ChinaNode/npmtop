@@ -1,6 +1,4 @@
-var request = require('request');
-var uri = 'https://isaacs.iriscouch.com/registry/'
-    + '_design/app/_view/npmTop?group_level=1';
+var request = require('./request');
 
 module.exports = function (cb) {
     getScores(function (err, scores) {
@@ -30,11 +28,18 @@ module.exports = function (cb) {
 };
 
 function getScores (cb) {
-    request({ uri : uri, json : true }, function (err, res, body) {
-        if (err) return cb(err)
-        if (body.error) return cb(body.error)
+    var opts = {
+        host: 'isaacs.iriscouch.com',
+        path: '/registry/_design/app/_view/npmTop?group_level=1',
+        rejectUnauthorized: false,
+        method: 'GET'
+    }
+    request(opts, function (err, buf) {
+        if (err) return cb(err);
         
-        var scores = body.rows.reduce(function (acc, row) {
+        var data = JSON.parse(buf.toString());
+        
+        var scores = data.rows.reduce(function (acc, row) {
             acc[row.key] = row.value;
             return acc;
         }, {});
